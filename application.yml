@@ -18,6 +18,7 @@ lavalink:
     nonAllocatingFrameBuffer: false
     opusEncodingQuality: 10
     password: youshallnotpass
+    #建議與下面的一樣
     playerUpdateInterval: 5
     resamplingQuality: LOW
     soundcloudSearchEnabled: true
