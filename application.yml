@@ -1,0 +1,119 @@
+lavalink:
+  server:
+    sessionResumeTimeout: 60  
+    bufferDurationMs: 400
+    filters:
+      channelMix: true
+      distortion: true
+      equalizer: true
+      karaoke: true
+      lowPass: true
+      rotation: true
+      timescale: true
+      tremolo: true
+      vibrato: true
+      volume: true
+    frameBufferDurationMs: 5000
+    gc-warnings: true
+    nonAllocatingFrameBuffer: false
+    opusEncodingQuality: 10
+    password: youshallnotpass
+    playerUpdateInterval: 5
+    resamplingQuality: LOW
+    soundcloudSearchEnabled: true
+    sources:
+      bandcamp: true
+      http: true
+      local: false
+      nico: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      youtube: false
+    trackStuckThresholdMs: 10000
+    useSeekGhosting: true
+    youtubePlaylistLoadLimit: 6
+    youtubeSearchEnabled: true
+logging:
+  file:
+    path: ./logs/
+  level:
+    lavalink: INFO
+    root: INFO
+  logback:
+    rollingpolicy:
+      max-file-size: 1GB
+      max-history: 30
+  request:
+    enabled: true
+    includeClientInfo: true
+    includeHeaders: false
+    includePayload: true
+    includeQueryString: true
+    maxPayloadLength: 10000
+metrics:
+  prometheus:
+    enabled: false
+    endpoint: /metrics
+sentry:
+  dsn: ""
+  environment: ""
+plugins:
+    youtube:
+      enabled: true
+      allowDirectPlaylistIds: true
+      allowDirectVideoIds: true
+      allowSearch: true
+      clients:
+        - WEB
+        - MUSIC
+        - WEBEMBEDDED
+        - ANDROID_VR
+        - TV
+        - TVHTML5EMBEDDED
+      oauth:
+        enabled: true
+        refreshToken: ""
+        #這裡如果你有也確保可以用 你可以直接貼上 或是 在啟動後 控制台會給你一個網址 讓你去拿
+        skipInitialization: true
+server:
+    shutdownGracePeriod: 10s
+    bufferDurationMs: 400
+    filters:
+      channelMix: true
+      distortion: true
+      equalizer: true
+      karaoke: true
+      lowPass: true
+      rotation: true
+      timescale: true
+      tremolo: true
+      vibrato: true
+      volume: true
+    frameBufferDurationMs: 5000
+    gc-warnings: true
+    nonAllocatingFrameBuffer: false
+    opusEncodingQuality: 10
+    password: youshallnotpass
+    #密碼建議更換
+    playerUpdateInterval: 5
+    resamplingQuality: LOW
+    soundcloudSearchEnabled: true
+    sources:
+      bandcamp: true
+      http: true
+      local: false
+      nico: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      youtube: false
+    trackStuckThresholdMs: 10000
+    useSeekGhosting: true
+    youtubePlaylistLoadLimit: 6
+    youtubeSearchEnabled: true
+    address: 0.0.0.0
+    http2:
+      enabled: true
+    port: 25540
+    #可以更改成你想要的port
